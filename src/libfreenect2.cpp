@@ -37,6 +37,7 @@
 
 #define WRITE_LIBUSB_ERROR(__RESULT) libusb_error_name(__RESULT) << " " << libusb_strerror((libusb_error)__RESULT)
 
+#define LIBFREENECT2_SETCONFIGURATION_COMPAT_INTERNAL
 #include <libfreenect2/libfreenect2.hpp>
 
 #include <libfreenect2/usb/event_loop.h>

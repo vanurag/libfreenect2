@@ -191,6 +191,16 @@ public:
   virtual bool close() = 0;
 };
 
+/** @deprecated Use Freenect2Device::setConfiguration() instead.
+ */
+class ConfigPacketProcessor
+{
+public:
+  typedef Freenect2Device::Config Config;
+  LIBFREENECT2_DEPRECATED virtual void setConfiguration(const Config &config) = 0;
+};
+
+
 class Freenect2Impl;
 
 /**
